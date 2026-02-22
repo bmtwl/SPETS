@@ -1,7 +1,6 @@
 #pragma once
 
-#include <wx/wx.h>
-#include <wx/dnd.h>
+#include <wxinclude.h>
 
 #include <SPETS/Util.h>
 #include <SPETS/GUI/Tools/ImportTool.h>

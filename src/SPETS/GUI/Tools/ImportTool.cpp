@@ -1,6 +1,6 @@
 #include "ImportTool.h"
 
-#include <wx/wx.h>
+#include <wxinclude.h>
 
 #include <Sprocket/Sprocket.h>
 #include <Sprocket/Error.h>

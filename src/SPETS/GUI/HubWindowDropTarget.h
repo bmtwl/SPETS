@@ -1,7 +1,6 @@
 #pragma once
 
-#include <wx/wx.h>
-#include <wx/dnd.h>
+#include <wxinclude.h>
 
 namespace SPETS {
 
