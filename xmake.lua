@@ -27,8 +27,9 @@ target("SPETS")
     add_files( "src/**.cpp")
 
     if is_plat("windows") then
+        add_headerfiles{ "src/**.h", "src/**.hpp" }
         local WX_ROOT = "D:/SDK/wx/3.3.1/"
-        add_defines("__WXMSW__", "WXUSINGDLL", "_UNICODE")
+        add_defines("__WXMSW__", "WXUSINGDLL", "_UNICODE", "wxMSVC_VERSION_AUTO", "wxMSVC_VERSION_ABI_COMPAT", "NDEBUG")
         add_includedirs(WX_ROOT .. "include/", WX_ROOT .. "lib/vc14x_x64_dll/mswu/")
         add_linkdirs(WX_ROOT .. "lib/vc14x_x64_dll/")
         add_files(WX_ROOT .. "include/wx/msw/wx.rc")
